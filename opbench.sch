@@ -6,13 +6,13 @@ V {}
 S {}
 E {}
 N 120 -100 140 -100 {
-lab=GND}
+lab=#net1}
 N 140 -100 140 -70 {
-lab=GND}
+lab=#net1}
 N 120 -70 140 -70 {
-lab=GND}
+lab=#net1}
 N 120 -70 120 -40 {
-lab=GND}
+lab=#net1}
 N 40 -100 80 -100 {
 lab=GN}
 N 120 -160 120 -130 {
@@ -43,13 +43,13 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {gnd.sym} 120 -40 0 0 {name=l2 lab=GND}
+C {devices/gnd.sym} 120 -40 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/corner.sym} 210 -410 0 0 {name=CORNER only_toplevel=true corner=tt}
-C {ipin.sym} 40 -100 0 0 {name=p2 lab=GN}
-C {iopin.sym} 120 -160 0 0 {name=p1 lab=ND}
-C {iopin.sym} 120 -340 0 0 {name=p3 lab=PS}
-C {ipin.sym} 40 -280 0 0 {name=p4 lab=GP}
-C {gnd.sym} 120 -220 0 0 {name=l1 lab=GND}
+C {devices/ipin.sym} 40 -100 0 0 {name=p2 lab=GN}
+C {devices/iopin.sym} 120 -160 0 0 {name=p1 lab=ND}
+C {devices/iopin.sym} 120 -340 0 0 {name=p3 lab=PS}
+C {devices/ipin.sym} 40 -280 0 0 {name=p4 lab=GP}
+C {devices/gnd.sym} 120 -220 0 0 {name=l1 lab=GND}
 C {sky130_fd_pr/pfet_01v8.sym} 100 -280 0 0 {name=M2
 W=2.5
 L=0.15
@@ -64,7 +64,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {simulator_commands_shown.sym} 240 -210 0 0 {name=COMMANDS
+C {devices/simulator_commands_shown.sym} 240 -210 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="VGP GP 0 dc 1.7
