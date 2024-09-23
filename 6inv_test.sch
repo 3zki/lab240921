@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 }
 G {}
 K {}
@@ -342,7 +342,7 @@ VD VDD 0 dc 1.8
 .control
 tran 1p 2n
 plot v(ina) v(outy)
-write 6inv_test3.raw
+write 6inv_test.raw
 .endc
 "}
 C {devices/code.sym} 590 -390 0 0 {name=TT_MODELS

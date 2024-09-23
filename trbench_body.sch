@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 }
 G {}
 K {}
@@ -41,6 +41,7 @@ VN D 0 dc 1.8
 save @m.xm1.msky130_fd_pr__nfet_01v8[vth] vn#branch vb#branch
 dc VB -1.8 1.8 0.01
 plot @m.xm1.msky130_fd_pr__nfet_01v8[vth]
+plot vn#branch
 plot vn#branch + vb#branch
 .endc
 "}

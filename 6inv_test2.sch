@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.6RC file_version=1.2
 }
 G {}
 K {}
@@ -449,7 +449,7 @@ VD VDD 0 dc 1.8
 .control
 tran 1p 2n
 plot v(ina) v(outy) v(outy2)
-write 6inv_test.raw
+write 6inv_test2.raw
 .endc
 "}
 C {sky130_fd_pr/nfet_01v8.sym} 880 -70 0 0 {name=M11
